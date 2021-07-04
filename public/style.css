@@ -1,0 +1,74 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+h1{
+    margin-top: 0;
+    font-family: 'Sigmar One', cursive;
+    font-size: 3rem;
+    line-height: 1rem;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: center / cover url('/bg.jpg');
+    color: #101010;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.generator{
+    text-align: center;
+    padding: 2rem;
+}
+
+button {
+    background: hsl(354.3, 100%, 37.1%);;
+    color: hsl(0, 0%, 100%);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    transition: background-color 150ms ease-in-out;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+button:hover{
+    background: rgb(163, 0, 16);
+}
+
+#dinoWrapper{
+    width:50%;
+    max-width: 25rem;
+    display: block;
+    margin: auto;
+}
+
+@media (min-width: 37.5em){
+    h1{
+        font-size: 2rem;
+    }
+    #dinoWrapper{
+        width:80%;
+    }
+}
+
+#dinoName {
+	background: hsl(0, 0%, 100%) ;
+	padding: 0.25rem;
+	border-radius: 1rem 1rem 0 0;
+}
+
+#dinoImage {
+	max-width: 100%;
+	border-radius: 0 0 1rem 1rem;
+}
